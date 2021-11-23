@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+int main() {
+
+	int correct_passcode, passcode;
+	correct_passcode = 246;
+	cout << "enter passcode:";
+	cin >> passcode;
+
+	while (true)
+	{
+		if (correct_passcode == passcode)
+		{
+			cout << "you won";
+			break;
+		}
+		else
+		{
+			cout << "enter again";
+			cin >> passcode;
+		}
+
+	}
+}
