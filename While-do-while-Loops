@@ -22,3 +22,78 @@ int main() {
 
 	}
 }
+
+
+
+#include <iostream>
+using namespace std;
+int main()
+
+{
+	string password = "246";
+	string userInput;
+
+	int x = 5;
+	cout << "you'll simplest have five attempts" << endl;
+
+
+	while (x > 0)
+	{
+		cout << "Enter the passcode for safe" << endl;
+
+		cin >> userInput;
+		if (userInput == password)
+		{
+			cout << "You have finally opened the safe" << endl;
+
+			break;
+
+		}
+		else
+			x--;
+	}
+	//to print the ran out of message only if the password was not found within 5 attempts
+	if (x == 0)
+	
+	{
+		cout << "You ran out of the attempts" << endl;
+	}
+	return 0;
+}
+
+
+
+#include <iostream>
+using namespace std;
+int main() {
+
+	char input;
+	do
+	{
+		cout << "Would you like to Quit (Y/N)?" <<
+			endl;
+
+		cin >> input;
+	} while ((input != 'Y') && (input != 'y'));
+
+	return 0;
+}
+
+
+
+#include <iostream>
+using namespace std;
+int main() 
+{
+
+	char input;
+	do
+	{
+		cout << "Do you want to quit  (Y/N)?" <<endl;
+
+		cin >> input;
+
+	} while ((input != 'Y') && (input != 'y'));
+
+	return 0;
+}
